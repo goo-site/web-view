@@ -1,4 +1,7 @@
-import {reactive, ref} from "vue";
+import {reactive, ref} from "vue"
+import loginPage from './loginPage.vue'
+import registerPage from './registerPage.vue'
+import retrievePage from './retrievePage.vue'
 
 const loginData = reactive({
     username: '',
@@ -35,6 +38,11 @@ const ToPageView = (view: PageView) => {
 }
 
 export default {
+    components:{
+        loginPage,
+        registerPage,
+        retrievePage
+    },
     pageView,
     ToPageView,
 

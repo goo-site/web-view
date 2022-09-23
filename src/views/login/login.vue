@@ -2,14 +2,8 @@
   <component :is="loginPage"></component>
 </template>
 
-<script>
-import loginPage from './loginPage.vue'
-import registerPage from './registerPage.vue'
+<script setup>
 
-export default {
-  components:{
-    loginPage,
-    registerPage
-  }
-}
+
+
 </script>
